@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -11,70 +12,63 @@
     margin: 0 auto;
 }
 
-header {
-    background-color: #004173;
+/* Encabezados de cada departamento */
+.departamento-header {
+    background-color: #222;
     color: white;
     text-align: center;
-    padding: 20px 0;
-    margin-bottom: 20px;
+    padding: 15px;
 }
 
+/* Menú de navegación */
 nav ul {
-    display: flex;
-    justify-content: space-around;
+    background-color: #444;
     list-style: none;
-    background-color: #0078C1;
-    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
     text-decoration: none;
+    color: white;
     font-weight: bold;
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 nav ul li a:hover {
-    background-color: #004173;
+    background-color: #555;
+    border-radius: 5px;
 }
 
-main {
-    padding: 20px 0;
-}
-
+/* Contenido */
 .content {
     text-align: center;
-}
-
-.content h2 {
-    margin-bottom: 20px;
-    color: #004173;
-}
-
-.content img {
-    max-width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.content p {
-    text-align: justify;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-footer {
-    background-color: #004173;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
     margin-top: 20px;
 }
 
-footer p {
-    margin: 5px 0;
+.content h2 {
+    color: #222;
+}
+
+.content img {
+    width: 60%;
+    max-width: 500px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
 }
